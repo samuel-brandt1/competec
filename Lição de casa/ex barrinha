@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		double DI, DC, X, totalbarrinha, totaldinheiro;
+		double N = 120;
+		double P = 2.99;
+		Scanner ler = new Scanner (System.in);
+		
+		System.out.println("***Mercado***");
+		
+		System.out.println("O preço da barrinha de goiaba é de: "+P+"reais");
+		
+		System.out.println("Quantos reais Itu levou para o mercado?");
+		DI=ler.nextDouble();
+		
+		System.out.println("Quantos reais Caio levou para o mercado?");
+		DC=ler.nextDouble();
+		
+		System.out.println("Precisa comprar 120 barrinhas para todos os alunos");
+		
+		totalbarrinha = N * P;
+		totaldinheiro = DC + DI;
+		X = totalbarrinha - totaldinheiro;
+		
+		System.out.println("Rayssa mandou "+X+" reais pelo pix para comprar");;
+		System.out.println("as barrinhas");
+	}
+}
