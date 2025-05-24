@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner inf = new Scanner(System.in);
+		String palavra;
+		int x = 1;
+		
+		System.out.println("Informe uma palavra");
+		palavra=inf.nextLine();
+		
+		System.out.println("\n");
+		
+		while (x <= 5) {
+		    
+		    System.out.println(x+"°: "+palavra);
+		    x++;
+		}
+	}
+}
