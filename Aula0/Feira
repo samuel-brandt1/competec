@@ -1,0 +1,28 @@
+public class Main
+{
+	public static void main(String[] args) {
+        
+        double Laranja = 2.00;
+        
+        double Banana = 2.50;
+        
+        double soma = 0;
+        
+        double fim = 0;
+        
+        System.out.println("O preço da banana é "+Banana);
+        
+        System.out.println("O preço da laranja é "+Laranja);
+        
+        System.out.println("2.00+2.50");
+        
+        soma = Laranja+Banana;
+        
+        System.out.println("O preço ficou "+soma);
+        
+        fim = (soma/100)*80;
+        
+        System.out.println("Os 80% ficou "+fim);
+        
+	}
+}
