@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int x = 0;
+	
+		System.out.println("Quantas partidas o Alan e o Beraldo jogaram?");
+		int quant = sc.nextInt();
+		int partidas [] = new int [quant];
+		
+		for (int i = 1; i <= quant; i++) {
+		System.out.println("Qual foi o placar da partida "+i);
+		System.out.print("Pontuação do Alan: ");
+		int alan = sc.nextInt();
+		System.out.print("Pontuação do Beraldo: ");
+		int beraldo = sc.nextInt();
+		    if ((alan - beraldo) > 0 ) {
+		      partidas[i] = 1;  
+		    }
+		    else if ((alan - beraldo) < 0) {
+		        partidas[i] = 2;  
+		    }
+		    else {
+		        partidas[i] = 0;  
+		    }
+		    System.out.println("Em que partida a dona nena passou?");
+		    int pas = sc.nextInt();
+		    
+		    if (partidas[pas] == pas) {
+		        
+		        if (partidas[pas] == 1) {
+		            System.out.println("O Alan venceu!!");
+		        }
+		        else if (partidas[pas] == 2) {
+		            System.out.println("O Beraldo venceu!!");
+		        }
+		        else {
+		            System.out.println("Houve um empate");
+		        }
+		    }
+		}
+	}
+}
