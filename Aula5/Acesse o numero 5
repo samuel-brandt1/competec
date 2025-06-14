@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int lin = 3;
+        int tabela[][] = new int [lin][3];
+        tabela[0][0] = 1;
+        tabela[0][1] = 2;
+        tabela[0][2] = 3;
+        tabela[1][0] = 4;
+        tabela[1][1] = 5;
+        tabela[1][2] = 6;
+        tabela[2][0] = 7;
+        tabela[2][1] = 8;
+        tabela[2][2] = 9;
+		System.out.println(tabela[1][1]);
+	}
+}
