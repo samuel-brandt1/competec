@@ -1,11 +1,11 @@
-import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
         int lin = 3;
         int col = 3;
+
         int tabela[][] = new int [lin][col];
+
         tabela[0][0] = 1;
         tabela[0][1] = 2;
         tabela[0][2] = 3;
@@ -15,10 +15,12 @@ public class Main
         tabela[2][0] = 7;
         tabela[2][1] = 8;
         tabela[2][2] = 9;
+
         for (int i = 0; i < lin; i++) {
-            for (int j = 0; j < col; j++){
+            for (int j = 0; j < col; j++) {
                 System.out.print(tabela[i][j]+ " ");
-            }
-        }
+
+            		}
+        	}
 	}
 }
