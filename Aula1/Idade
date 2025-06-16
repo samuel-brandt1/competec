@@ -1,0 +1,10 @@
+public class Idade 
+{
+    public static void main (String[] args) {
+        int MinhaIdade = 15;
+        int ProfIdade = 21;
+        
+        boolean MesmaIdade = MinhaIdade == ProfIdade;
+        System.out.println("Tenho a mesma idade do professor? "+MesmaIdade);
+    }
+}
