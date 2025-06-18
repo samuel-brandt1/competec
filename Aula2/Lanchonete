@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class Lanchonete
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double saldo, carteira, selec = 0;
+    int quant, escolha;
+
+    System.out.println("---Lanchonete---");
+    System.out.println("Aqui temos:");
+		System.out.println("[1] Hamburguer R$9,99");
+		System.out.println("[2] Batata frita R$7,00");
+		System.out.println("[3] Refrigerante R$5,00");
+
+		System.out.println("Qual item você deseja pedir?");
+		escolha = sc.nextInt();
+
+		System.out.println("Quantos?");
+		quant = sc.nextInt();
+
+		switch (escolha) {
+		case 1:
+			System.out.println("Você escolheu "+quant+" hamburgueres");
+			selec = 9.99;
+			break;
+		case 2:
+			System.out.println("Você escolheu "+quant+" batatas fritas");
+			selec = 7;
+			break;
+		case 3:
+			System.out.println("Você escolheu "+quant+" refrigerantes");
+			selec = 5;
+			break;
+		default:
+			System.out.println("VALOR INVÁLIDO");
+			break;
+		}
+
+	  saldo = selecionado*quant;
+		System.out.println("O total foi de: R$"+carrinho);
+
+		System.out.println("Quanto dinheiro você tem?");
+		carteira = sc.nextDouble();
+		sc.close();
+
+		if (carteira < saldo) {
+			System.out.println("SALDO INSUFICIENTE");
+		}
+
+		else if (carteira >= saldo) {
+			System.out.println("COMPRA REALIZADA!");
+			carteira -= saldo;
+			System.out.println("Seu saldo agora é: R$"+carteira);
+		}
+	}
+}
