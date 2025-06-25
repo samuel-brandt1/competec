@@ -1,0 +1,12 @@
+public class Soma0a100 {
+    public static void main (String[] args) {
+        int cont = 0, soma = 0;
+        System.out.println("Soma dos números de 0 A 100");
+        
+        while (cont <= 100) {
+            soma = soma + cont;
+            cont++;
+        }
+        System.out.println("O resultado deu: "+soma);
+    }
+}
