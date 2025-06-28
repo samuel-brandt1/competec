@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class AcerteASenha
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String senha = "BATATA";
+		
+		System.out.println("Descubra a senha secreta");
+		String tentativa = sc.nextLine();
+		boolean taCerto = tentativa.equalsIgnoreCase(senha);
+		if (taCerto) {
+		    System.out.println("Parabéns, você acertou!");
+		}
+		else {
+		    System.out.println("Que pema, você errou!");
+		}
+	}
+}
