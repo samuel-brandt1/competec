@@ -7,12 +7,7 @@ public class AcerteASenha
 		
 		System.out.println("Descubra a senha secreta");
 		String tentativa = sc.nextLine();
-		boolean taCerto = tentativa.equalsIgnoreCase(senha);
-		if (taCerto) {
-		    System.out.println("Parabéns, você acertou!");
-		}
-		else {
-		    System.out.println("Que pema, você errou!");
-		}
+		String taCerto = (tentativa.equalsIgnoreCase(senha)) ? "Parabéns, você acertou!" : "Errou, que pena!";
+		System.out.println(taCerto);
 	}
 }
