@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class AdivinheSenha {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String senha = "senha123";
+		
+		System.out.print("Senha: ");
+		String resposta = sc.nextLine();
+		
+        String respostafinal = (resposta.equals(senha)) ? "BOA, SENHA CORRETA!" : "SENHA INCORRETA! TENTE NOVAMENTE";
+		System.out.println(respostafinal);
+	}
+}
