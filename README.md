@@ -1,1 +1,1 @@
-# competec
+# Competec 2025
